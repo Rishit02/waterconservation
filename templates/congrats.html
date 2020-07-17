@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block content%}
+
+{% endblock %}
+
+{% block heading %} Congratulations! You have completed the pledge
+<img class="balloons" src="static/balloons.jpg" alt="balloons">
+
+{% endblock %}
+
+{% block body %}
+  <a href="{{url_for('hello')}}">Click here</a> for other helpful tips to save water
+{% endblock %}

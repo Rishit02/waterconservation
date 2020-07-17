@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Water Conservation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/templates.css')}}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <meta name = “viewport” content = “width=width-device, initial-scale=1.0”>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='static/javascript/script.js'></script>
+  </head>
+
+  {% block content %}
+  {% endblock %}
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="{{ url_for('hello') }}"> Home      </a>
+      <a class="navbar-brand" href="{{ url_for('hello') }}"> About      </a>
+      <a class="navbar-brand" href="{{ url_for('questionnaire') }}"> Questionnaire    </a>
+      <a class="navbar-brand" href="{{ url_for('pledge') }}"> Pledge </a>
+      <a class="navbar-brand" href="{{ url_for('innovate') }}"> Innovation </a>
+    </nav>
+
+      <div class="container col-lg-8">
+        <div class="card bg-light p-3">
+          <h1 id="mtitle">{% block heading %} {% endblock %}</h1>
+          {% block body %}
+          {% endblock %}
+        </div>
+      </div>
+  </body>
+</html>

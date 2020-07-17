@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+
+{% block content%}
+
+{% endblock %}
+
+{% block heading %} <b>Water Conservation </b> {% endblock %}
+
+{% block body %}
+  <span id="about"><h4>About</h4></span>
+  <p>
+    The lack of awareness surrounding the water crisis in households around the world is concerning.
+    We aim to create awareness regarding the various ways that we can conserve water as it becomes a scarce resource
+    for many around the world
+  </p>
+  <p>
+    <h4 id="why_necessary">Why has the conservation of water become necessary?</h4>
+    <ul>
+      <li>A child’s life is lost every 8 seconds due to the lack of clean, drinking water</li>
+      <li>By 2025 two-thirds of the world’s population will run out of fresh drinking water or be under stressed water condition</li>
+      <li>There are close to 844 million people without access to clean, drinking water in the world</li>
+      <li>Women are often tasked with the challenge of walking 5 to 10 kilometers to collect water</li>
+      <li>Due to the lack of access of water women and girls all around the world are forced to spend more than 200 M hours collecting water</li>
+      <li>Nearly 1 million people die each year from water, sanitation and hygiene-related diseases which could be reduced with access to safe water or sanitation</li>
+    </ul>
+  </p>
+  <img class="centerImage" src="static/Waterorg_Water-Crisis_Img-1.jpg" alt="water_crisis_img_1" width="25%" height="25%" align="middle">
+  <p>Check out our <a href="{{ url_for('pledge') }}">pledge</a> to learn how you can do your part to conserve water in your community</p>
+{% endblock %}

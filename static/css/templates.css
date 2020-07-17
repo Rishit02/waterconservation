@@ -1,0 +1,69 @@
+/* CSS file extension example */
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 10px;
+  margin-bottom: 0.5rem;
+}
+
+.centerImage
+{
+  text-align: center;
+  display: block;
+}
+
+@@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.balloons {
+  animation-name: appear;
+  animation-delay: 1s;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes colour {
+    from {
+        color: black;
+    }
+    to  {
+        color: #007bff;
+    }
+}
+
+h1 {
+    animation-name: colour;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+h2, h3, h4, h5, h6 {
+    animation-name: colour;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+
+@media print {
+  .navbar {
+    display: none;
+  }
+}
+
+.navbar{
+  position: sticky;
+  float: middle;
+}
+
+.container {
+  margin-top: 5px;
+}
+
+nav a:active {
+  font-color: #007bff;
+}

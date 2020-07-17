@@ -1,0 +1,41 @@
+{% extends 'layout.html' %}
+
+{% block content%}
+
+{% endblock %}
+
+{% block heading %} Water Conservation {% endblock %}
+
+{% block body %}
+<form class="pledge" action="congrats" method="post">
+  <p>Sign the pledge to save water</p>
+  <label for="name" placeholder="Please enter name"><b>Name</b></label>
+  <input class="form-control" type="text" name="name" required autofocus>
+  <br>
+  <div class="checkboxes">
+    <ol>
+      <li>
+      <label for="showers">Take showers that take 5 minutes or less
+      <input class="form-control" type="checkbox" name="showers" autofocus /></label>
+    </li>
+      <li>
+      <label for="clothes">Wash clothes on a full load
+      <input class="form-control" type="checkbox" name="clothes" autofocus></label>
+    </li>
+
+      <li>
+      <label for="leaks">Repair leaks promptly
+      <input class="form-control" type="checkbox" name="leaks" autofocus></label>
+    </li>
+
+      <li>
+      <label for="brushing">Close the tap or use a glass while brushing
+      <input class="form-control" type="checkbox" name="brushing" autofocus></label>
+      </li>
+
+    </ol>
+</div>
+
+<button class="btn btn-default btn-primary" type="submit" name="button">Submit! <i class="fa fa-paper-plane"></i></button>
+</form>
+{% endblock %}
