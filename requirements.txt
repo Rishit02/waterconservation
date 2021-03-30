@@ -181,7 +181,7 @@ pydocstyle==4.0.1
 pyflakes==2.1.1
 pygame==2.0.0.dev6
 PyGetWindow==0.0.8
-Pygments==2.5.2
+Pygments==2.7.4
 pylint==2.4.4
 PyMsgBox==1.0.8
 pyobjc==6.2
